@@ -1,0 +1,258 @@
+/* RESET */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* MON CSS */
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+h2 {
+	margin: 0 0 20px 0;
+	text-decoration: underline;
+	text-align: center;
+}
+
+nav {
+	border: 1px black solid;
+	text-align: center;
+	padding: 20px;
+}
+
+nav li {
+	display: inline;
+	margin: 0 10px;
+}
+
+table {
+	margin: auto;
+	margin-top: 15px;
+}
+
+table td, table th{
+	border: 1px black solid;
+	padding: 10px;
+	text-align: center;
+}
+
+table th {
+	font-weight: bold;
+}
+
+table td {
+	font-size: 0.8em;
+}
+
+/* liens NEXT et PREVIOUS pagination */
+.next, .previous {
+	margin: 10px 0;
+	font-size: 0.8em;
+}
+.next {
+	float: right;
+	margin-right: 10px;
+}
+
+.previous {
+	float: left;
+	margin-left: 10px;
+}
+
+#main {
+	width: 950px;
+	margin: auto;
+	border: 2px solid black;
+	border-radius: 5px;
+	font-family: Helvetica, sans-serif;
+}
+
+#header {
+	text-align: center;
+	margin-top: 25px;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	padding: 15px 0;
+	font-size: 2em;
+	background-color: black;
+}
+
+#header a {
+	color: white;
+}
+
+footer {
+	clear: both;
+	text-align: center;
+	border-top: 1px solid #7d7d7d;
+	border-bottom: 1px solid #7d7d7d;
+	padding: 15px 0;
+	font-size: 0.8em;
+	font-style: italic;
+	margin: 5px 0;
+	background-color: #575757;
+	color: white;
+}
+
+#bloc_center {
+	margin: 20px 0;
+	padding: 30px 0;
+	text-align: center;
+}
+
+#bloc_center p {
+	padding: 20px 0;
+	max-width: 50%;
+	margin: auto;
+}
+
+label
+{
+	display: inline-block; /*parce que les input sont du type inline et que je peux pas leur appliquer de largeur */
+	float: left; /* pour que tous les labels restent fixes a gauche */
+	width: 145px;
+}
+
+label, input, select {
+	margin: 10px 0 20px 20px;
+	max-width: 115px;
+}
+
+.bloc_left {
+	float: left;
+	margin: 45px 0 10px 10px;
+	max-width: 30%;
+	border: 1px dashed #000;
+	border-radius: 5px;
+	padding: 10px 5px;
+}
+
+.bloc_left header {
+	text-align: center;
+}
+
+#valid {
+	display: block;
+	margin-left: 45%;
+	margin-bottom: 0;
+}
+
+#bloc_right {
+	padding: 5px;
+	float: left;
+	width: 65%;
+	margin-left: 10px;
+}
+
+#bloc_right header {
+	text-align: center;
+	margin-top: 10px;
+	text-decoration: underline;
+}
+
+/* Page Info membre */
+
+.info, #films_vus {
+	margin: 20px 10px;
+	border: 1px dashed #000;
+	border-radius: 5px;
+	padding: 10px 5px;
+	max-width: 100%;
+}
+
+.info label, #seance label {
+	float: none;
+	width: 110px;
+}
+
+/* historique membre */
+
+#add_film_historique label, #add_avis_film label, #limitHistorique label {
+	float: none;
+}
+
+#add_film_historique label, #add_film_historique section {
+	margin: 10px 0px 10px 20px;
+}
+
+#limitHistorique {
+	text-align: center;
+}
+
+#limitHistorique label, #limitHistorique input {
+	margin: 0;
+}
+
+#films_vus {
+	margin-top: 15px;
+}
+
+#historique, #indexFilm, #indexMembres { /* largeur des tableaux */
+	width: 100%;
+}
+
+/* Page Abonnement Reduction */
+
+#abo, #reduc {
+	padding: 10px;
+}
+
+/* Page seances */
+#seance, .resultSeances, #infosFilm {
+	border: 1px black dashed;
+	border-radius: 10px;
+	text-align: center;
+	margin: 30px 10px;
+	padding: 10px;
+}
+
+/* Page Fiche Film */
+#infosFilm {
+	text-align: left;
+}
+
+#infosFilm p {
+	line-height: 35px;
+}
